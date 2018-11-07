@@ -137,6 +137,90 @@ main {
 	top: -18px;
 }
 
+main {
+	margin-top: 45px;
+}
+
+.slider {
+	position: relative;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	width: 18px;
+	height: 18px;
+	top: 36px;
+    left: -9px;
+    z-index: 10;
+	background-color: #d68009;
+}
+
 .slide {
 	display: flex;
+}
+
+.s-text {
+	position: relative;
+	padding: 35px 20px;
+	background-color: #322530;
+	color: #fff;
+}
+
+.s-text .title {
+	font-family: "Philosopher";
+	font-size: 23px;
+	margin-bottom: 35px;
+}
+
+.s-text .description {
+	font-family: "Roboto";
+	font-size: 13px;
+	color: #ac98a9;
+	margin-bottom: 125px;
+}
+
+.switch {
+	display: flex;
+	justify-content: space-between;
+}
+
+.counts {
+	font-family: "Philosopher";
+	font-size: 48px;
+}
+
+.counts span {
+	color: #877484;
+	font-size: 24px;
+}
+
+.s-btns {
+	display: flex;
+	justify-content: space-between;
+	width: 50px;
+}
+
+.slide-btn-prev,
+.slide-btn-next {
+	position: relative;
+	bottom: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 11px;
+    height: 20px;
+    background-image: none;
+    margin-top: 0;
+    opacity: .35;
+}
+
+.slide-btn-prev:hover,
+.slide-btn-next:hover {
+    opacity: 1;
+}
+
+.s-image img {
+	width: 555px;
+	height: 457px;
 }
