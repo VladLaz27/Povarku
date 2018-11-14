@@ -19,6 +19,18 @@
 		font-size: 18px;
 }
 
+	.main-bottom {
+		display: none;
+	}
+
+	.social {
+		flex-wrap: wrap;
+	}
+
+	.social li {
+		margin-top: 5px;
+	}
+
 }
 
 

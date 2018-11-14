@@ -18,6 +18,12 @@ main {
 	margin-top: 45px;
 }
 
+footer {
+	margin-top: 50px;
+	padding-bottom: 75px;
+	background-color: #f6f2f6;
+}
+
 .top {
 	border-bottom: 1px solid #cacaca;
 }
@@ -105,6 +111,10 @@ main {
 	text-decoration: none;
 }
 
+.menu-list li a:active {
+	color: #d68009;
+}
+
 .show-menu {
 	display: flex;
 	float: right;
@@ -143,6 +153,7 @@ main {
 
 .slider {
 	position: relative;
+	margin-bottom: 42px;
 }
 
 .slider:before {
@@ -223,4 +234,267 @@ main {
 .s-image img {
 	width: 555px;
 	height: 457px;
+}
+
+.m-container span {
+	display: block;
+	font-family: "Philosopher";
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.line {
+	position: relative;
+	margin-bottom: 45px;
+	width: 100%;
+	height: 1px;
+	background-color: #cacaca;
+}
+
+.line:after {
+	position: absolute;
+	content: "";
+	left: 46%;
+	top: -7px;
+	width: 70px;
+	height: 14px;
+	background: #fff url("../img/center.jpg") 50% no-repeat;
+}
+
+.item-image {
+	margin-bottom: 30px;
+}
+
+.item-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.m-item {
+	cursor: pointer;
+}
+
+.m-item:hover .item-image img {
+	box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+}
+
+.item-text {
+	font-style: "Roboto";
+	margin-bottom: 25px;
+	max-height: 127px;
+    overflow: hidden;
+}
+
+.i-title {
+	margin-bottom: 22px;
+	font-size: 18px;
+}
+
+.i-title a {
+	color: #333;
+	text-decoration: none;
+}
+
+.m-item:hover .i-title a {
+	color: #d68009;
+}
+
+.i-description {
+	margin-bottom: 22px;
+	color: #666;
+}
+
+.i-visit {
+	display: flex;
+	color: #999;
+}
+
+.m-item .i-visit span {
+	position: relative;
+	font-size: 11px;
+	padding-left: 20px;
+}
+
+.v-comment {
+	margin-left: 20px;
+}
+
+.v-eye:before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 16px;
+	height: 12px;
+	background-image: url("../img/oko.png");
+	background-repeat: no-repeat;
+	opacity: .4;
+}
+
+.v-comment:before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 16px;
+	height: 15px;
+	background-image: url("../img/comment.png");
+	background-repeat: no-repeat;
+	opacity: .4;
+}
+
+.m-item:hover .v-eye,
+.m-item:hover .v-comment {
+	color: #000;
+}
+
+.m-item:hover .v-eye:before,
+.m-item:hover .v-comment:before {
+	opacity: 1;
+}
+
+.main-bottom {
+	background-color: #f6f2f6;
+	margin-bottom: 45px;
+	padding: 65px 30px 35px;
+}
+
+.mb-menu {
+	border-top: 1px solid #cacaca;
+}
+
+.mb-menu-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+.mb-menu-list li {
+	padding: 30px 0;
+	list-style: none;
+}
+
+.mb-menu-list a {
+	color: #333333;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.mb-menu-list a:hover {
+	color: #d68009;
+	text-decoration: none;
+}
+
+.welcome {
+	color: #d68009;
+}
+
+.m-container p {
+	color: #666666;
+}
+
+.footer-logo {
+	margin-top: 65px;
+	padding-top: 0;
+}
+
+.footer-menu {
+	margin-top: 65px;
+	margin-bottom: 20px;
+}
+
+.f-menu-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+.f-menu-list li {
+	border-right: 2px solid #777;
+	padding-right: 45px;
+	list-style: none;
+}
+
+.f-menu-list li:last-child {
+	border-right: none;
+	padding-right: 0;
+}
+
+.f-menu-list a {
+	color: #333333;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.f-menu-list a:hover {
+	color: #d68009;
+	text-decoration: none;
+}
+
+.f-middle span {
+	color: #999999;
+	font-size: 12px;
+}
+
+.page-footer {
+	margin-top: 30px;
+	display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.social {
+	display: flex;
+	padding: 0;
+	margin-left: 35px;
+}
+
+.social li {
+	list-style: none;
+	margin-right: 5px;
+
+}
+
+.social a {
+	display: block;
+	width: 49px;
+	height: 47px;
+	border: 1px solid #cccccc;
+}
+
+.social a:hover {
+	background-color: #322530;
+}
+
+.social .hzshovono {
+	border: none;
+	margin-left: 25px;
+}
+
+.odnokl {
+	background-image: url("../img/odnokl.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.fb {
+	background-image: url("../img/fb.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.vk {
+	background-image: url("../img/vk.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.google {
+	background-image: url("../img/google.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
