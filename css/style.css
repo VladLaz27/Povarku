@@ -236,7 +236,8 @@ main {
 	height: 457px;
 }
 
-.m-container span {
+.m-container span,
+.s-form span {
 	display: block;
 	font-family: "Philosopher";
 	font-size: 24px;
@@ -256,7 +257,8 @@ main {
 .line:after {
 	position: absolute;
 	content: "";
-	left: 46%;
+	transform: translateX(-50%);
+	left: 50%;
 	top: -7px;
 	width: 70px;
 	height: 14px;
@@ -276,12 +278,13 @@ main {
 	cursor: pointer;
 }
 
-.m-item:hover .item-image img {
+.m-item:hover .item-image img,
+.p-item:hover .pi-image img {
 	box-shadow: 0 3px 15px rgba(0,0,0,0.5);
 }
 
 .item-text {
-	font-style: "Roboto";
+	font-family: "Roboto";
 	margin-bottom: 25px;
 	max-height: 127px;
     overflow: hidden;
@@ -297,7 +300,8 @@ main {
 	text-decoration: none;
 }
 
-.m-item:hover .i-title a {
+.m-item:hover .i-title a,
+.p-item:hover .pi-description a p {
 	color: #d68009;
 }
 
@@ -346,12 +350,14 @@ main {
 }
 
 .m-item:hover .v-eye,
-.m-item:hover .v-comment {
+.m-item:hover .v-comment,
+.p-item:hover .visyulka {
 	color: #000;
 }
 
 .m-item:hover .v-eye:before,
-.m-item:hover .v-comment:before {
+.m-item:hover .v-comment:before,
+.p-item:hover .visyulka:before {
 	opacity: 1;
 }
 
@@ -497,4 +503,133 @@ main {
 	background-image: url("../img/google.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+}
+
+.popular-title {
+	margin-bottom: 45px;
+}
+
+.p-items {
+	display: flex;
+	flex-direction: column;
+}
+
+.p-item {
+	font-style: "Roboto";
+	display: flex;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	border-bottom: 1px dashed #cacaca;
+}
+
+.pi-image {
+	width: 100px;
+	height: 86px;
+	min-width: 100px;
+	margin-right: 20px;
+}
+
+.pi-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.pi-description {
+	height: 86px;
+	overflow: hidden;
+}
+
+.pi-description a {
+	text-decoration: none;
+}
+
+.pi-description p {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #333;
+	line-height: 15px;
+}
+
+.pi-description span {
+	position: relative;
+	font-size: 13px;
+	color: #999;
+	font-weight: normal;
+	margin-bottom: 0;
+	text-align: left;
+    padding-left: 20px;
+}
+
+.pi-description span:before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 13px;
+	height: 13px;
+	background-image: url("../img/visyulka.png");
+	background-repeat: no-repeat;
+	opacity: .4;
+}
+
+.s-form {
+	position: relative;
+	background-color: #f6f2f6;
+	padding: 45px 20px;
+	margin-bottom: 30px;
+}
+
+.s-form .line {
+	width: 80%;
+	margin: 0 auto 45px;
+}
+
+.s-form .line:after {
+	position: absolute;
+    content: "";
+    transform: translateX(-50%);
+    left: 50%;
+    top: -7px;
+    width: 70px;
+    height: 14px;
+    background: #f6f2f6 url(../img/form-img.png) 50% no-repeat;
+} 
+
+.s-form p {
+	text-align: center;
+}
+
+.f-inputs input {
+	width: 100%;
+	height: 35px;
+}
+
+.f-inputs input[type=e-mail] {
+	padding: 12px 12px;
+	margin-bottom: 20px;
+}
+
+.f-inputs input[type=submit] {
+	background-color: #322530;
+	font-family: "Philosopher";
+	font-size: 14px;
+	color: #fff;
+	border: none;
+}
+
+.f-inputs input[type=submit]:hover {
+	cursor: pointer;
+	background-color: #d68009;
+}
+
+.s-vk,
+.s-odk {
+
+	margin: 0 auto 30px;
+} 
+
+.s-vk .vk-image,
+.s-odk .odk-image {
+	display: flex;
+	justify-content: center;
 }
