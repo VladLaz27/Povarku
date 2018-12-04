@@ -6,6 +6,10 @@
 	line-height: 21px;
 }
 
+ul {
+	list-style: none;
+}
+
 a {
 	cursor: pointer;
 }
@@ -16,6 +20,10 @@ header {
 
 main {
 	margin-top: 45px;
+}
+
+.main {
+	margin-top: 0;
 }
 
 footer {
@@ -111,7 +119,11 @@ footer {
 	text-decoration: none;
 }
 
-.menu-list li a:active {
+.main-menu li .active-item {
+	color: #d68009;
+}
+
+.main-menu li .active-item:hover {
 	color: #d68009;
 }
 
@@ -246,12 +258,22 @@ main {
 	margin-bottom: 45px;
 }
 
-.line {
+.m-container .art-mc-span {
+	font-size: 30px;
+	text-align: left;
+}
+
+.line,
+.art-line {
 	position: relative;
 	margin-bottom: 45px;
 	width: 100%;
 	height: 1px;
 	background-color: #cacaca;
+}
+
+.art-line {
+	margin-bottom: 40px;
 }
 
 .line:after {
@@ -316,13 +338,20 @@ main {
 }
 
 .m-item .i-visit span {
+	padding-right: 20px;
+}
+
+.m-item .i-visit span,
+.art-toolbar .i-visit span {
 	position: relative;
 	font-size: 11px;
 	padding-left: 20px;
 }
 
-.v-comment {
+.art-toolbar .v-comment,
+.art-toolbar .v-eye {
 	margin-left: 20px;
+	margin-bottom: 25px;
 }
 
 .v-eye:before {
@@ -515,7 +544,7 @@ main {
 }
 
 .p-item {
-	font-style: "Roboto";
+	font-family: "Roboto";
 	display: flex;
 	padding-bottom: 25px;
 	margin-bottom: 25px;
@@ -539,25 +568,32 @@ main {
 	overflow: hidden;
 }
 
-.pi-description a {
+.pi-description a,
+.art-pi-description a {
 	text-decoration: none;
 }
 
-.pi-description p {
+.pi-description p,
+.art-pi-description p {
 	margin-bottom: 10px;
 	font-size: 14px;
 	color: #333;
 	line-height: 15px;
 }
 
-.pi-description span {
+.pi-description span,
+.art-pi-description span {
 	position: relative;
 	font-size: 13px;
 	color: #999;
 	font-weight: normal;
 	margin-bottom: 0;
 	text-align: left;
-    padding-left: 20px;
+	padding-left: 20px;
+}
+
+.art-pi-description span {
+	padding-left: 0;
 }
 
 .pi-description span:before {
@@ -632,4 +668,214 @@ main {
 .s-odk .odk-image {
 	display: flex;
 	justify-content: center;
+}
+
+.breadcrumbs-main {
+	margin-bottom: 45px;
+	background-color: #f6f2f6;
+}
+
+.breadcrumbs {
+	font-family: "Roboto";
+	font-size: 13px;
+	color: #999;
+}
+
+.b-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.b-list li {
+	list-style: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.bc-main {
+	color: #999;
+}
+
+.bc-main:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+.breadcrumbs .b-list .bc-active {
+	color: #333;
+	font-weight: 500;
+}
+
+.b-list li span {
+	margin: 0 10px;
+}
+
+.heading-links {
+	margin-bottom: 45px;
+}
+
+.hl-list ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.hl-list ul li {
+	list-style: none;
+	margin: 15px 5px;
+}
+
+.hl-list ul li a {
+	color: #333;
+	background-color: #f6f2f6;
+	padding: 10px 10px;
+}
+
+.hl-list ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #d68009;
+	padding: 10px 10px;
+}
+
+.art-toolbar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.raiting-stars {
+	display: flex;
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+
+.raiting-stars li {
+	list-style: none;
+}
+
+.r-star {
+	width: 16px;
+	height: 15px;
+	background-image: url("../img/star.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.r-star:hover {
+	opacity: .3;
+}
+
+.social-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.social-list li {
+	list-style: none;
+	margin-right: 5px;
+}
+
+.art-description {
+	font-family: "Philosopher";
+	font-style: italic;
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 45px;
+}
+
+.art-main-top {
+	padding-bottom: 45px;
+}
+
+.amt-right .p-item {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.amt-left {
+	margin-bottom: 45px;
+}
+
+.amt-left img {
+	width: 100%;
+}
+
+.composition {
+	overflow: hidden;
+	width: 100%;
+	padding: 45px 55px;
+	margin-bottom: 45px;
+	background-image: url("../img/bg-article.png");
+	background-color: #f6f2f6;
+	background-repeat: no-repeat;
+}
+
+.composition span {
+	display: block;
+	color: #333;
+	font-family: "Philosopher";
+	font-weight: bold;
+	font-size: 20px; 
+	margin-bottom: 25px;
+}
+
+.composition a {
+	color: #333;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 500;
+}
+
+.composition a:hover {
+	color: #d68009;
+	text-decoration: none;
+}
+
+.m-container .a-title {
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.m-container .a-description {
+	font-family: "Roboto";
+	font-size: 15px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.a-images {
+	display: flex;
+	margin-bottom: 45px;
+}
+
+.a-images div:first-child {
+	margin-right: 10px;
+}
+
+.a-images div img{
+	width: 100%;
+}
+
+.m-container {
+	overflow: hidden;
+}
+
+.art-p {
+	position: relative;
+	display: block;
+	padding: 30px 60px 35px;
+	border: 1px solid #9db032;
+}
+
+.art-p:before {
+	position: absolute;
+    content: "";
+    left: -20px;
+    top: -25px;
+    width: 53px;
+    height: 53px;
+    background: #f6f2f6 url(../img/160.png) 50% no-repeat;
 }

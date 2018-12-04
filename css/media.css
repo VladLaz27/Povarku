@@ -89,6 +89,19 @@
 		width: 690px;
 	}
 
+	.a-images {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.a-images div img {
+		width: 432px;
+	}
+
+	.a-images div:first-child {
+	margin-bottom: 10px;
+}
+
 }
 
 /* Small Devices, Tablets */
